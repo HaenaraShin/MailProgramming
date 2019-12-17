@@ -22,12 +22,13 @@ class Solution191208: Solution<Long, Long> {
         var `F(n)` = `F(n-1)` + `F(n-2)`
 
         while (`F(n)` < max ) {
-            `F(n-2)` = `F(n-1)`
-            `F(n-1)` = `F(n)`
-            `F(n)` = `F(n-1)` + `F(n-2)`
             if (`F(n)` % 2L == 0L) {
                 evenSum += `F(n)`
             }
+            `F(n-2)` = `F(n-1)`
+            `F(n-1)` = `F(n)`
+            `F(n)` = `F(n-1)` + `F(n-2)`
+
         }
         return evenSum
     }
