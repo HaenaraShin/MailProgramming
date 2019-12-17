@@ -17,6 +17,29 @@
 - [2019. 12. 01](2019/12/20191201.md)
 - [2019. 12. 08](2019/12/20191208.md)
 
+## ▶️ 예제 실행
+
+- 코틀린 프로젝트로 구성되어 있어서, 실제로 gradle로 빌드하면 실행해 볼 수 있습니다.
+- 프로그램 실행 시 프로그램 인자로 문제 번호(YYYYMMDD)와 예제 입력을 넣으면 됩니다.
+
+### 프로젝트 실행 예제
+
+#### 커맨드라인 실행 시
+ 
+```
+./gradlew run --args '20191201 -10, -3, 5, 6, -2'
+```
+
+#### IntelliJ 실행 시
+
+- ![IntelliJ 예제 실행 화면](sample_run.png)
+
+1. 실행 버튼 옆의 **Edit Configurations...** 선택
+2. 좌측 **+버튼** 클릭 후 **Kotlin**선택
+2. **Use classapth of module**는 MailProgramming.main 선택
+3. **Main class**는 dev.haenara.mailprogramming.MainKt 선택
+4. **Program arguments**는 문제 번호(YYYYMMDD)와 예제 입력
+
 ## ©️ 라이선스 및 저작권
 
 ![라이선스 문의 답변](answer.png)
@@ -27,7 +50,6 @@
 
 
 ```
-
 MIT License
 
 Copyright (c) 2019 Haenala Shin
