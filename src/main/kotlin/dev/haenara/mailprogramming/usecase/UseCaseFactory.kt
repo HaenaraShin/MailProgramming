@@ -9,6 +9,7 @@ class UseCaseFactory {
                 "20191208" -> return UseCase191208(restOfArgs(args))
                 "20191215" -> return UseCase191215(restOfArgs(args))
                 "20191222" -> return UseCase191222(restOfArgs(args))
+                "20191229" -> return UseCase191229(restOfArgs(args))
             }
         }
         throw InvaildProgramArgumentException()
