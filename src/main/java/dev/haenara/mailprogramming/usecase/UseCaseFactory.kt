@@ -5,6 +5,7 @@ class UseCaseFactory {
     fun createUsecase(args: Array<String>): UseCase<*, *> {
         if (args.isNotEmpty()) {
             when (args[0]) {
+                "20190811" -> return UseCase190811(restOfArgs(args))
                 "20191201" -> return UseCase191201(restOfArgs(args))
                 "20191208" -> return UseCase191208(restOfArgs(args))
                 "20191215" -> return UseCase191215(restOfArgs(args))
