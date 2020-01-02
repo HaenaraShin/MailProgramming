@@ -15,7 +15,7 @@ import kotlin.Pair;
  * 풀이
  * 링크드리스트를 사용하는 대신 배열로 풀었으나, 순차적으로 더해나가므로 어느쪽이든 상관 없다.
  * N자리수의 자연수 합이므로 A1->A2->... , B1->B2->... 을 더하는 경우
- * An+Bn+(n-1)항의 받아올림(carrier) 으로 표현가능하다.
+ * n번째 항은 An+Bn+(n-1)항의 받아올림(carrier) 으로 표현가능하다.
  * 따라서 이전 carrier만 기억하고 있다면 A와B와 덧셈없이 3차 배열로 값을 구할 수 있다.
  */
 
@@ -79,16 +79,6 @@ public class Solution190811 implements Solution<Pair<String, String>, String> {
             },
     };
 
-    /**
-     * 풀이
-     * 링크드리스트를 사용하는 대신 배열로 풀었으나, 순차적으로 더해나가므로 어느쪽이든 상관 없다.
-     * N자리수의 자연수 합이므로 A1->A2->... , B1->B2->... 을 더하는 경우
-     * An+Bn+(n-1)항의 받아올림(carrier) 으로 표현가능하다.
-     * 따라서 이전 carrier만 기억하고 있다면 A와B와 덧셈없이 3차 배열로 값을 구할 수 있다.
-     * @param list1
-     * @param list2
-     * @return
-     */
     private String calculeList(String[] list1, String[] list2) {
         StringBuffer buffer = new StringBuffer();
         int car = 0; // 받아올림은 이전 싸이클 값을 가지고 있어야 하므로 for 문 밖에서 선언
