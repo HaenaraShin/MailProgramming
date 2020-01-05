@@ -10,7 +10,7 @@ class UseCase190801(args: Array<String>) : UseCase<String, String>(args) {
             " * Input: \"banana\"\n" +
             " * Output: \"b.n.n.\"\n" +
             " * Input: \"aaa\"\n" +
-            " * Output: \"aaa\"\n" +
+            " * Output: \"...\"\n" +
             " *\n" +
             " * 풀이\n" +
             " * 알파벳을 전부 매핑 char배열에 넣어놓고 a와 A만 . 값을 넣어둔다음 그냥 문자열을 매핑 배열의 값을 참조한다.\n" +
