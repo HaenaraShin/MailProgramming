@@ -53,7 +53,7 @@ public class Solution190721 implements Solution<Integer, String[]> {
         String[] arrSum = new String[arr1.length + arr2.length];
         System.arraycopy(arr1, 0, arrSum, 0, arr1.length);
         if (arrSum.length - arr1.length >= 0)
-            System.arraycopy(arr2, arr1.length - arr1.length, arrSum, arr1.length, arrSum.length - arr1.length);
+            System.arraycopy(arr2, 0, arrSum, arr1.length, arrSum.length - arr1.length);
         return arrSum;
     }
 }
