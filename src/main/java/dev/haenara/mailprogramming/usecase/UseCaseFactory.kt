@@ -6,6 +6,7 @@ class UseCaseFactory {
         if (args.isNotEmpty()) {
             when (args[0]) {
                 "20190721" -> return UseCase190721(restOfArgs(args))
+                "20190728" -> return UseCase190728(restOfArgs(args))
                 "20190801" -> return UseCase190801(restOfArgs(args))
                 "20190804" -> return UseCase190804(restOfArgs(args))
                 "20190811" -> return UseCase190811(restOfArgs(args))
