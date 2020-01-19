@@ -1,6 +1,4 @@
-package dev.haenara.mailprogramming.usecase
-
-import dev.haenara.mailprogramming.solution.Solution
+package dev.haenara.mailprogramming.solution
 
 abstract class UseCase<Input, Output>(val args: Array<String>) {
     abstract fun parseInput(args: Array<String>): Input

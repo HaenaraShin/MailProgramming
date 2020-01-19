@@ -1,6 +1,7 @@
-package dev.haenara.mailprogramming.usecase
+package dev.haenara.mailprogramming.solution.y2019.m12.d08
 
 import Solution191208
+import dev.haenara.mailprogramming.solution.UseCase
 
 class UseCase191208(args: Array<String>) : UseCase<Long, Long>(args) {
     override val solution = Solution191208()

@@ -1,4 +1,4 @@
-package dev.haenara.mailprogramming.solution.y2019.dec
+package dev.haenara.mailprogramming.solution.y2019.m12.d29
 
 import dev.haenara.mailprogramming.solution.Solution
 

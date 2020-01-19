@@ -1,4 +1,4 @@
-package dev.haenara.mailprogramming.solution.y2019.aug;
+package dev.haenara.mailprogramming.solution.y2019.m08.d11;
 
 import dev.haenara.mailprogramming.solution.Solution;
 import kotlin.Pair;

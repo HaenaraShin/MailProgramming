@@ -1,6 +1,6 @@
 package dev.haenara.mailprogramming
 
-import dev.haenara.mailprogramming.usecase.UseCaseFactory
+import dev.haenara.mailprogramming.solution.UseCaseFactory
 
 fun main(args: Array<String>) {
     MailProgrammingMain().launchMain(args)

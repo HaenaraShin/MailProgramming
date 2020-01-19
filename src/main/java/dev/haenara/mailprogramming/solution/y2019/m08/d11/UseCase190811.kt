@@ -1,11 +1,13 @@
-package dev.haenara.mailprogramming.usecase
+package dev.haenara.mailprogramming.solution.y2019.m08.d11
 
-import dev.haenara.mailprogramming.solution.y2019.aug.Solution190811
+import dev.haenara.mailprogramming.solution.InvaildProgramArgumentException
+import dev.haenara.mailprogramming.solution.UseCase
 
 class UseCase190811(args: Array<String>) : UseCase<Pair<String, String>, String>(args) {
     override val solution = Solution190811()
     override val sampleInput = Pair("", "")
-    override val description = "* 연결 리스트로 표현된 두 정수 A 와 B 가 있습니다. A 와 B 를 더한 결과를 연결 리스트로 리턴하시오.\n" +
+    override val description = "* 매일프로그래밍 2019. 08. 11\n" +
+            " * 연결 리스트로 표현된 두 정수 A 와 B 가 있습니다. A 와 B 를 더한 결과를 연결 리스트로 리턴하시오.\n" +
             " * Given two integers represented as linked lists, return a linked list that is a sum of the two given linked lists.\n" +
             " *\n" +
             " * Input: 1->2->3, 1->2->3 // 321 + 321\n" +
