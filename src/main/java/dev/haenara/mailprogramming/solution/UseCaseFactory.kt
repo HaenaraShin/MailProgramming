@@ -10,6 +10,7 @@ import dev.haenara.mailprogramming.solution.y2019.m12.d08.UseCase191208
 import dev.haenara.mailprogramming.solution.y2019.m12.d15.UseCase191215
 import dev.haenara.mailprogramming.solution.y2019.m12.d22.UseCase191222
 import dev.haenara.mailprogramming.solution.y2019.m12.d29.UseCase191229
+import dev.haenara.mailprogramming.solution.y2019.m12.d29.UseCase200119
 import dev.haenara.mailprogramming.solution.y2020.m01.d06.UseCase200106
 import dev.haenara.mailprogramming.solution.y2020.m01.d12.UseCase200112
 
@@ -30,6 +31,7 @@ class UseCaseFactory {
                 "20191229" -> return UseCase191229(restOfArgs(args))
                 "20200106" -> return UseCase200106(restOfArgs(args))
                 "20200112" -> return UseCase200112(restOfArgs(args))
+                "20200119" -> return UseCase200119(restOfArgs(args))
             }
         }
         throw InvaildProgramArgumentException()
