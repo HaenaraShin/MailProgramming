@@ -24,7 +24,6 @@ class Solution191222 : Solution<Array<Int>, Int>{
         val callCount = hashMapOf<Int, Int>()
         input.forEach {
             callCount[it] = (callCount[it] ?: 0) + 1
-            println("key : $it, count : ${callCount[it]}")
             if (callCount[it]!! > atLeast) {
                 return it
             }
