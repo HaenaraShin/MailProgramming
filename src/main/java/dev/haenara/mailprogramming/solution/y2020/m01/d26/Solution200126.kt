@@ -9,10 +9,31 @@ import dev.haenara.mailprogramming.solution.Solution
  * Output: 7 (원소 2와 9)
  *
  * 풀이
+ * 문제의 조건대로 만약 두 원소의 차가 최대가 되는 경우는 둘중의 하나의 원소가 최소값 또는 최대값일 수밖에 없다.
+ * 따라서 최소값이 나오는 경우와 최댓값이 나오는 경우를 찾아서 차이값을 갱신해나가면서
+ * 결과적으로 최대 차이값이 결정되는 순간을 찾는다.
+ * 단 최소값이 좌측에 있어야 하므로, 새로운 최소값이 나오는 경우부터 새로 비교하면 된다.
  */
 
 class Solution200126 : Solution<Array<Int>, Int>{
     override fun solution(input: Array<Int>): Int {
-        TODO()
+        var currentMin = input[0]
+        var currentMax = input[0]
+        var currntDiff = currentMax - currentMin
+        var maxDiff = currntDiff
+
+        for (element in input) {
+            if (currentMax < element) {
+                currentMax = element
+                currntDiff = currentMax - currentMin
+                maxDiff = maxOf(currntDiff, maxDiff)
+           }
+            else if (currentMin > element) {
+                currentMin = element
+                currentMax = element
+                currntDiff = 0
+            }
+        }
+        return maxDiff
     }
 }
