@@ -27,9 +27,10 @@ class Solution191229 : Solution<Array<Int>, Array<Int>>{
             } else {
               zeroCnt++
             }
-            if (output.size - index - 1 <= zeroCnt) {
-                output[index] = 0
-            }
+        }
+        while (position < output.size) {
+            output[position] = 0
+            position++
         }
         return output
     }
