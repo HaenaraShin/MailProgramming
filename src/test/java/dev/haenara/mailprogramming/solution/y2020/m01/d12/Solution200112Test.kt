@@ -1,4 +1,4 @@
-package dev.haenara.mailprogramming.solution.y2020.m01
+package dev.haenara.mailprogramming.solution.y2020.m01.d12
 
 import Solution200112
 import org.junit.Assert.*
