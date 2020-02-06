@@ -17,16 +17,15 @@ import dev.haenara.mailprogramming.solution.Solution
  */
 class Solution191215 : Solution<Array<Int>, Array<Int>>{
     override fun solution(input: Array<Int>): Array<Int> {
-        val sum = input.sum()
         var leftSum = 0
-        var rightSum = sum
+        var rightSum = input.sum()
         val answerList = arrayListOf<Int>()
-        for (i in 0..input.lastIndex){
-            rightSum -= input[i]
+        for ((index, value) in input.withIndex()){
+            rightSum -= value
             if (leftSum == rightSum) {
-                answerList.add(i)
+                answerList.add(index)
             }
-            leftSum += input[i]
+            leftSum += value
         }
         return answerList.toTypedArray()
     }
