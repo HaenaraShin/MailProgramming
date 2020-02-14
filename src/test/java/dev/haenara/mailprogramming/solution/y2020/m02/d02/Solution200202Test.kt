@@ -83,4 +83,36 @@ internal class Solution200202Test {
             Solution200202().solution(arrayOf(1, -4, 2, 0, 3, -10, 3, 6, -2, 4, 0))
         )
     }
+
+    @Test
+    fun `20200202-TC11 `() {
+        Assert.assertEquals(
+            10,
+            Solution200202().solution(arrayOf(10, -1, 1, -2, 2, -3, 3, -4, 4, 0))
+        )
+    }
+
+    @Test
+    fun `20200202-TC12 `() {
+        Assert.assertEquals(
+            11,
+            Solution200202().solution(arrayOf(10, -1, 1, -2, 2, -3, 3, -4, 4, 1))
+        )
+    }
+
+    @Test
+    fun `20200202-TC13 `() {
+        Assert.assertEquals(
+            10,
+            Solution200202().solution(arrayOf(1, -1, 2, -2, 3, -3, 4, -4, 10))
+        )
+    }
+
+    @Test
+    fun `20200202-TC14 `() {
+        Assert.assertEquals(
+            11,
+            Solution200202().solution(arrayOf(-10, 2, -1, 2, -2, 3, -3, 4, -4, 10))
+        )
+    }
 }
